@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Madimi One", sans-serif;
+}
+
+body {
+  height: 100vh; /*altura da tela inteira vh*/
+  display: flex; /* Define o tipo de layout do elemento como flexível, permitindo o uso das propriedades justify-content e align-content. */
+  background: linear-gradient(120deg, blue, red); /*deg 120graus*/
+  justify-content: center; /* Alinha os itens ao centro ao longo do eixo principal (horizontal). */
+  align-content: center; /* Alinha as linhas de itens ao centro ao longo do eixo transversal (vertical). */
+}
+
+.relogio {
+  display: flex; /* Define o tipo de layout do elemento como flexível. */
+  align-items: center; /* Alinha os itens verticalmente ao centro. */
+  justify-content: space-around; /* Distribui o espaço restante igualmente entre os itens, mantendo espaços iguais à esquerda e à direita de cada item. */
+  height: 200px; /* Define a altura do elemento como 200 pixels. */
+  width: 550px; /* Define a largura do elemento como 550 pixels. */
+  background: transparent; /* Define o fundo do elemento como transparente. */
+  border-radius: 3px; /* Define o raio de borda para suavizar os cantos do elemento. */
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao elemento com um deslocamento horizontal de 0px, um deslocamento vertical de 8px, um raio de desfoque de 10px e uma cor RGBA preta com transparência de 5%. */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.relogio div {
+  height: 170px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(5, 5, 5, 0.6);
+  box-shadow: 5px 5px 15px rgb(0, 0, 0.7);
+  border: 10px;
+  letter-spacing: 5px;
+}
